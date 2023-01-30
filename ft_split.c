@@ -6,7 +6,7 @@
 /*   By: dmaximci <dmaximci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 22:27:56 by dmaximci          #+#    #+#             */
-/*   Updated: 2023/01/19 23:36:03 by dmaximci         ###   ########.fr       */
+/*   Updated: 2023/01/30 11:54:02 by dmaximci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,14 @@ static	char	*ft_strdup_spec(char const *s, char c)
 	return (dst);
 }
 
+static void	*dofree(char **res, int j)
+{
+	while (j-- > 0)
+		free(res[j]);
+	free(res);
+	return (NULL);
+}
+
 char	**ft_split(const char *s, char c)
 {
 	char	**tab;
@@ -71,6 +79,8 @@ char	**ft_split(const char *s, char c)
 		while (s[i] && s[i] == c)
 			i++;
 		tab[j++] = ft_strdup_spec(s + i, c);
+		if (!tab[j++])
+			return (dofree(tab, j));
 		while (s[i] && s[i] != c)
 			i++;
 	}
