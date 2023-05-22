@@ -1,74 +1,38 @@
 # libft
 
----**ft_atoi**= transform char* to int. \n
-Return= int
----**ft_bzero**= Set memory of void* s to 0 for the size of n. 
-Return= array that have all places set to 0.
----**ft_calloc**= allocated memory with malloc and set to 0.
-Return= allocated memory and set to 0.
----**ft_isalnum**= Check if c is an alphanumeric character.
-Return= 8 if true, 0 if false.
----**ft_isalpha**= Check if c is an alphabetic character.
-Return= 1024 if true, 0 if false.
----**ft_isascii**= Check if c is a character from ASCII table.
-Return= 1 if true, 0 if false.
----**ft_isdigit**= Check if c is a numeric character.
-Return: 2048 if true, 0 if false.
----**ft_isprint**= Check if c is a printable character from ASCII table.
-Return= 1 if true, 0 if false.
----**ft_itoi**= The opposite of ft_atoi. Convert int n to a char* type.
-Return= transformed int in a char*
----**ft_memchr**= Return void* to a string from s if c is inside s in first n bytes or return NULL.
-Return= if c in s in first n bytes return s with all characters start at the position of c. if not return NULL.
----**ft_memcmp**= Search the difference between s1 and s2 in first n bytes.
-Return= return the difference between chars or return 0 if the same.
----**ft_memcpy**= Copy n bytes from src to dest.
-Return= the pointer to the new string.
----**ft_memmove**= Copy n bytes of memory from src to dest.
-Return= return the pointer for the new string.
----**ft_memset**= Fill memory s with constant c for n bytes.
-Return= return the new string.
----**ft_putchar_fd**= Show c in file descriptor
-Return= nothing
----**ft_putendl_fd**= Show string s and add '\n' at the end.
-Return= nothing
----**ft_putnbr_fd**= Show in fd passed n integer.
-Return= nothing
----**ft_putstr_fd**= Show in fd the string s.
-Return= nothing
----**ft_split**= Cut a string in an array of pointers, divided by the c char.
-Return= an array of pointers
----**ft_strchr**= Search c in s.
-Return= return the rest of s from c character to end of s.
----**ft_strdup**= copy a constant to a string for future use
-Return= Return a copy of a constant as normal string
----**ft_striteri**= Apply for all chars in s, the f function.
-Return= nothing
----**ft_strjoin**= Concatenate 2 strings.
-Return= new string
----**ft_strlcat**= Copy src to dst at the end
-Return= size of the new string
----**ft_strlcpy**= Copy n bytes of src to dst at the end
-Return= size of src
----**ft_strlen**= Return the size of s
-Return= size of s
----**ft_strmapi**= Apply for all chars in s, the f function. Similar to ft_striteri but work with const.
-Return= new string
----**ft_strncmp**= Compare first n bytes of s1 and s2
-Return= the difference, 0 if equal
----**ft_strnstr**= Find string little in string big in first len bytes
-Return= the rest of big at first occurrence with little or NULL
----**ft_strrchr**= Find c char in s
-Return= the rest of s at the first occurrence with c.
----**ft_strtrim**= Remove all occurrence of set chars at the start and at the end of s1 string
-Return= s1 without set chars at the start and at the end
----**ft_substr**= Return new string from s starting at start position for len bytes
-Return= new string
----**ft_tolower**= transform c char to lowercase.
-Return= new char
----**ft_toupper**= transform c char to uppercase.
-Return= new char
----**libft.h**= header file with prototypes for all functions of libft
-Return= nothing
----**Makefile libft**= Makefile that make my library usable
-Return= nothing
+- **ft_atoi**= transform char* to int. Return= int
+- **ft_bzero**= Set memory of void* s to 0 for the size of n. Return= array that have all places set to 0.
+- **ft_calloc**= allocated memory with malloc and set to 0.Return= allocated memory and set to 0.
+- **ft_isalnum**= Check if c is an alphanumeric character. Return= 8 if true, 0 if false.
+- **ft_isalpha**= Check if c is an alphabetic character. Return= 1024 if true, 0 if false.
+- **ft_isascii**= Check if c is a character from ASCII table. Return= 1 if true, 0 if false.
+- **ft_isdigit**= Check if c is a numeric character. Return: 2048 if true, 0 if false.
+- **ft_isprint**= Check if c is a printable character from ASCII table. Return= 1 if true, 0 if false.
+- **ft_itoi**= The opposite of ft_atoi. Convert int n to a char* type. Return= transformed int in a char*
+- **ft_memchr**= Return void* to a string from s if c is inside s in first n bytes or return NULL. Return= if c in s in first n bytes return s with all characters start at the position of c. if not return NULL.
+- **ft_memcmp**= Search the difference between s1 and s2 in first n bytes. Return= return the difference between chars or return 0 if the same.
+- **ft_memcpy**= Copy n bytes from src to dest. Return= the pointer to the new string.
+- **ft_memmove**= Copy n bytes of memory from src to dest. Return= return the pointer for the new string.
+- **ft_memset**= Fill memory s with constant c for n bytes. Return= return the new string.
+- **ft_putchar_fd**= Show c in file descriptor Return= nothing
+- **ft_putendl_fd**= Show string s and add '\n' at the end. Return= nothing
+- **ft_putnbr_fd**= Show in fd passed n integer. Return= nothing
+- **ft_putstr_fd**= Show in fd the string s. Return= nothing
+- **ft_split**= Cut a string in an array of pointers, divided by the c char. Return= an array of pointers
+- **ft_strchr**= Search c in s. Return= return the rest of s from c character to end of s.
+- **ft_strdup**= copy a constant to a string for future use Return= Return a copy of a constant as normal string
+- **ft_striteri**= Apply for all chars in s, the f function. Return= nothing
+- **ft_strjoin**= Concatenate 2 strings. Return= new string
+- **ft_strlcat**= Copy src to dst at the end Return= size of the new string
+- **ft_strlcpy**= Copy n bytes of src to dst at the end Return= size of src
+- **ft_strlen**= Return the size of s Return= size of s
+- **ft_strmapi**= Apply for all chars in s, the f function. Similar to ft_striteri but work with const. Return= new string
+- **ft_strncmp**= Compare first n bytes of s1 and s2 Return= the difference, 0 if equal
+- **ft_strnstr**= Find string little in string big in first len bytes Return= the rest of big at first occurrence with little or NULL
+- **ft_strrchr**= Find c char in s Return= the rest of s at the first occurrence with c.
+- **ft_strtrim**= Remove all occurrence of set chars at the start and at the end of s1 string Return= s1 without set chars at the start and at the end
+- **ft_substr**= Return new string from s starting at start position for len bytes Return= new string
+- **ft_tolower**= transform c char to lowercase. Return= new char
+- **ft_toupper**= transform c char to uppercase. Return= new char
+- **libft.h**= header file with prototypes for all functions of libft. Return= nothing
+- **Makefile libft**= Makefile that make my library usable. Return= nothing
