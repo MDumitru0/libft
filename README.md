@@ -1,6 +1,6 @@
 # libft
 
----**ft_atoi**= transform char* to int. 
+---**ft_atoi**= transform char* to int. \n
 Return= int
 ---**ft_bzero**= Set memory of void* s to 0 for the size of n. 
 Return= array that have all places set to 0.
